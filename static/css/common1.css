@@ -1,0 +1,47 @@
+
+html, body {
+    height: 100%;
+    min-height: 100%;
+}
+
+.row-header-1 {
+    background-color: lightblue;
+    border: 1px solid black;
+}
+.row-central {
+    height: 600px;
+    background-color: lightblue;
+    border: 1px solid black;
+}
+.row-footer {
+    height: 25px;
+    background-color: lightblue;
+    border: 1px solid black;
+}
+
+.col-menu .col-output .col-history {
+    background-color: lightblue;
+    border: 1px solid black;
+}
+
+.subheader-left {
+    height: 25px;
+    background-color: white;
+    border: 1px solid black;
+}
+.subheader-main {
+    height: 25px;
+    background-color: lightblue;
+    border: 1px solid black;
+}
+.subheader-controls {
+    height: 25px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+body {
+    background-color: lightblue;
+}
+
+

@@ -1,0 +1,108 @@
+
+/*QuickReset*/ * {margin:0;box-sizing:border-box;}
+
+html, body{
+  height:100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Lato", sans-serif;
+}
+
+/*__________________ 1/3 HEADERS __________________*/
+header {
+  width: 100%;
+  height: 90px;
+  background: linear-gradient(to bottom, hsl(75,100%,16%) 0%,hsl(76,100%,28%) 100%);
+
+}
+.menu-bar {
+  width: 100%;
+  height: 25px;
+  background: rgba(0, 0, 0, .5);
+}
+
+/*__________________ 3/3 FOOTER __________________*/
+footer {
+  width: 100%;
+  height: 25px;
+  background: #132535;
+}
+
+
+/*__________________ 2/3 CENTRAL AREA __________________*/
+.main-div {
+  flex: 1;
+  height:100%;
+  background: fixed linear-gradient(to bottom, hsl(200,27%,2%) 0%,hsl(203,29%,26%) 100%);
+  border-style: solid;
+  border-width: 1px;
+  border-color: #33B5E5;
+}
+
+/*__________________ COMMON TEXT SETTINGS __________________*/
+.text-default {
+   color: green;
+   text-align: left;
+   font-size: 15px;
+}
+
+/*__________________ FLEX WRAPPER __________________*/
+.flex-main-wrapper {
+     display: flex;
+     flex-flow: row nowrap;
+     justify-content: center;
+     height: 100%;
+}
+
+/*__________________ FLEX ELEM __________________*/
+.col-menu {
+   border-right: 1px solid #33B5E5;
+   width: 25%;
+}
+.col-out {
+   border-right: 1px solid #33B5E5;
+   width: 50%;
+}
+.col-history {
+   width: 25%;
+}
+/*__________________ DROP DOWN BUTTON __________________*/
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+  }
+
+/*__________________ END __________________*/
