@@ -3,6 +3,7 @@ package main
 import (
 	//"github.com/sbasile-ch/api-browser/handlers"
 	"net/http"
+	"os"
 )
 
 type companyInfo struct {
@@ -10,6 +11,8 @@ type companyInfo struct {
 	CompanyJson string
 	OfficerJson string
 }
+
+var ApiKey string = os.Getenv("MY_CH_API")
 
 //__________________________________________________
 func main() {
