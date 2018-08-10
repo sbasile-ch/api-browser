@@ -2,7 +2,7 @@
 /*QuickReset*/ * {margin:0;box-sizing:border-box;}
 
 html, body{
-  height:100%;
+  height:100vh;
 }
 
 body {
@@ -13,33 +13,31 @@ body {
 
 /*__________________ 1/3 HEADERS __________________*/
 header {
-  width: 100%;
   height: 90px;
+  width: 100%;
   background: linear-gradient(to bottom, hsl(75,100%,16%) 0%,hsl(76,100%,28%) 100%);
 
 }
 .menu-bar {
-  width: 100%;
   height: 25px;
+  width: 100%;
   background: rgba(0, 0, 0, .5);
 }
 
 /*__________________ 3/3 FOOTER __________________*/
 footer {
-  width: 100%;
   height: 25px;
+  width: 100%;
   background: #132535;
 }
 
 
 /*__________________ 2/3 CENTRAL AREA __________________*/
-.main-div {
+.main-area {
   flex: 1;
-  height:100%;
+  height: calc(100vh-142px)     /* 90 (header) + 25 (subheader) + 25 (footer) + 3 1px.borders */
   background: fixed linear-gradient(to bottom, hsl(200,27%,2%) 0%,hsl(203,29%,26%) 100%);
-  border-style: solid;
-  border-width: 1px;
-  border-color: #33B5E5;
+  border: 1px solid #33B5E5;
 }
 
 /*__________________ COMMON TEXT SETTINGS __________________*/
@@ -68,6 +66,9 @@ footer {
 }
 .col-history {
    width: 25%;
+}
+.col-menu .col-out .col-history {
+  height: 100%;
 }
 /*__________________ DROP DOWN BUTTON __________________*/
 
