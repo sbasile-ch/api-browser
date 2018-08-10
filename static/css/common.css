@@ -11,51 +11,43 @@ body {
   font-family: "Lato", sans-serif;
 }
 
-/*__________________ 1/3 HEADERS __________________*/
 header {
   height: 90px;
   width: 100%;
   background: linear-gradient(to bottom, hsl(75,100%,16%) 0%,hsl(76,100%,28%) 100%);
-
+  /*border-bottom: 1px solid green;*/
 }
 .menu-bar {
   height: 25px;
   width: 100%;
+  text-align: center;
   background: rgba(0, 0, 0, .5);
 }
 
-/*__________________ 3/3 FOOTER __________________*/
+.main-area {
+  flex: 1;
+  background: fixed linear-gradient(to bottom, hsl(200,27%,2%) 0%,hsl(203,29%,26%) 100%);
+  border: 1px solid #33B5E5;
+}
+
 footer {
   height: 25px;
   width: 100%;
   background: #132535;
 }
 
-
-/*__________________ 2/3 CENTRAL AREA __________________*/
-.main-area {
-  flex: 1;
-  height: calc(100vh-142px)     /* 90 (header) + 25 (subheader) + 25 (footer) + 3 1px.borders */
-  background: fixed linear-gradient(to bottom, hsl(200,27%,2%) 0%,hsl(203,29%,26%) 100%);
-  border: 1px solid #33B5E5;
-}
-
-/*__________________ COMMON TEXT SETTINGS __________________*/
 .text-default {
-   color: green;
-   text-align: left;
-   font-size: 15px;
+    color: green;
+    text-align: left;
+    font-size: 15px;
 }
-
-/*__________________ FLEX WRAPPER __________________*/
 .flex-main-wrapper {
      display: flex;
      flex-flow: row nowrap;
      justify-content: center;
-     height: 100%;
+     height:100%;
 }
 
-/*__________________ FLEX ELEM __________________*/
 .col-menu {
    border-right: 1px solid #33B5E5;
    width: 25%;
@@ -67,11 +59,12 @@ footer {
 .col-history {
    width: 25%;
 }
+
 .col-menu .col-out .col-history {
   height: 100%;
 }
-/*__________________ DROP DOWN BUTTON __________________*/
 
+/*__________________ NAV BUTTON __________________*/
 
 .topnav {
   overflow: hidden;
@@ -104,6 +97,15 @@ footer {
   margin-top: 8px;
   margin-right: 16px;
   font-size: 17px;
-  }
+}
 
+/*__________________ TEXT AREA __________________*/
+
+.json-text-area {
+  height: 95%;
+  width: 100%;
+  resize: none;
+  overflow-y: scroll;
+  background-color: #e0e0eb;
+}
 /*__________________ END __________________*/

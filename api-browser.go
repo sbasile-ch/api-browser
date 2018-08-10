@@ -7,9 +7,9 @@ import (
 )
 
 type companyInfo struct {
-	CompanyNum  string
-	CompanyJson string
-	OfficerJson string
+	CompanyNum   string
+	JsonTextArea string
+	OfficerJson  string
 }
 
 var ApiKey string = os.Getenv("MY_CH_API")
@@ -25,6 +25,8 @@ func main() {
 		http.HandleFunc("/setAlert", setCompanyAlert)
 	*/
 
+	// serve CSS and JS files locally stored in ./static
 	http.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir("static"))))
+
 	http.ListenAndServe("127.0.0.1:8080", nil)
 }
